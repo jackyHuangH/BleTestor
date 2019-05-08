@@ -147,7 +147,6 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {
-						// TODO Auto-generated methdo stub
 						charString.setText("字符串: " + stringValue);
 						charHex.setText("十六进制: " + hexValue);
 						time.setText("读取时间: " + readTime);
@@ -521,7 +520,6 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 					}
 					bleService.mBluetoothGatt.writeCharacteristic(gattChar);
 				} catch (Exception e) {
-					// TODO: handle exception
 					e.printStackTrace();
 				}
 			}
@@ -543,7 +541,6 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 					}
 					bleService.mBluetoothGatt.writeCharacteristic(gattChar);
 				} catch (Exception e) {
-					// TODO: handle exception
 					e.printStackTrace();
 				}
 			}
@@ -566,7 +563,6 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 					}
 					bleService.mBluetoothGatt.writeCharacteristic(gattChar);
 				} catch (Exception e) {
-					// TODO: handle exception
 					e.printStackTrace();
 				}
 			}
@@ -585,6 +581,7 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 					writing = true;
 				}
 				new Thread(new Runnable() {
+					@Override
 					@SuppressLint("NewApi")
 					public void run() {
 						try {
