@@ -33,6 +33,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
+/**设备列表
+ * @author HZJ
+ */
 public class MainActivity extends AppCompatActivity {
 	ListView listView;
 	SwipeRefreshLayout swagLayout;

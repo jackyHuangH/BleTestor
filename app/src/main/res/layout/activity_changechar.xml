@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="特征操作"
-        android:gravity="center"
         android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="特征操作"
         android:textColor="@android:color/white"/>
 
     <TextView
@@ -42,6 +44,7 @@
 
     <TextView
         android:id="@+id/tv_charHex"
+        tools:text="计算机高科技仿个"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -80,7 +83,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="开始通知"
+            android:text="停止通知"
             android:visibility="gone"/>
     </LinearLayout>
 
@@ -94,9 +97,8 @@
         <TextView
             android:id="@+id/et_notify_resualt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="#ffffff"
-            android:editable="false"
             android:focusable="false"
             android:gravity="top"
             android:hint="(此处显示通知的值)"/>

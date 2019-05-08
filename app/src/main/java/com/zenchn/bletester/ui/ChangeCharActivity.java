@@ -79,7 +79,7 @@ public class ChangeCharActivity extends AppCompatActivity implements OnClickList
 	int rssi;
 	long period;
 	int write_byte_number;
-	boolean startNotify;
+	boolean startNotify=true;
 	boolean isNotifyHex;
 	boolean isHex;
 

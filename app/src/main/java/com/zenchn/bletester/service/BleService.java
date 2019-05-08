@@ -151,8 +151,7 @@ public class BleService extends Service {
 	};
 
 	@SuppressLint("NewApi")
-	private void getChartacteristicValue(
-			BluetoothGattCharacteristic characteristic) {
+	private void getChartacteristicValue(BluetoothGattCharacteristic characteristic) {
 
 		List<BluetoothGattDescriptor> des = characteristic.getDescriptors();
 		Intent mIntent = new Intent(ACTION_CHAR_READED);

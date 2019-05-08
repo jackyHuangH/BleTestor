@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zenchn.bletester.R;
@@ -34,7 +35,7 @@ import java.util.List;
 
 
 /**
- * 连接设备
+ * 服务列表
  * @author HZJ
  */
 public class DeviceConnectActivity extends AppCompatActivity {
@@ -157,6 +158,9 @@ public class DeviceConnectActivity extends AppCompatActivity {
 	}
 
 	private void init() {
+		TextView tvTitle = (TextView) findViewById(R.id.tv_title);
+		tvTitle.setText("服务列表");
+
 		serviceList = (ListView) findViewById(R.id.lv_deviceList);
 		serviceList.setEmptyView(findViewById(R.id.pb_empty));
 		servicesListAdapter = new BleSevicesListAdapter(this);
